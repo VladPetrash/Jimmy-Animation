@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function pathPrepare ($el) {
+var lineLength = $el[0].getTotalLength();
+$el.css("stroke-dasharray", lineLength);
+$el.css("stroke-dashoffset", lineLength);
+}
+  var $line30 = $("path#newnew-1");
+
+  pathPrepare($line30);
+
+  var controller30 = new ScrollMagic.Controller();
+
+  var tween30 = new TimelineMax()
+    .add(TweenMax.to($line30, 0.6, {strokeDashoffset: 0, ease:Linear.easeNone}))
+
+  var scene30 = new ScrollMagic.Scene({triggerElement: "#new-line1", duration: 200, tweenChanges: true})
+
+        .setTween(tween30)
+
+        .addTo(controller30);
+</script>
+</body>
+</html>
