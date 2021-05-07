@@ -88,14 +88,14 @@ var lineLength = $el[0].getTotalLength();
 $el.css("stroke-dasharray", lineLength);
 $el.css("stroke-dashoffset", lineLength);
 }
-  var $line35 = $("path#newnew-6");
+  var $lineend = $("path#newnew-6");
 
-  pathPrepare($line35);
+  pathPrepare($lineend);
 
   var controller33 = new ScrollMagic.Controller();
 
   var tween33 = new TimelineMax()
-    .add(TweenMax.to($line35, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}))
+    .add(TweenMax.to($lineend, 0.7, {strokeDashoffset: 0, ease:Linear.easeNone}))
 
   var scene33 = new ScrollMagic.Scene({triggerElement: "#new-line4", duration: 200, tweenChanges: true})
 
